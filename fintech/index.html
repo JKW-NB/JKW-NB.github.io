@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="王金凯的金融科技主页：金融与统计背景、基金轮动研究、预测市场评测、事件数据治理和 AI 研究工具。">
+<meta name="theme-color" content="#F8F7F3">
+<title>王金凯 | 金融科技与量化研究</title>
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="fintech">
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="#main" aria-label="王金凯，金融科技主页">
+<span class="brand-mark" aria-hidden="true">JK</span>
+<span>王金凯<span class="brand-en">WANG JINKAI</span>
+</span>
+</a>
+<nav class="section-nav" aria-label="页内导航">
+<a href="#cases">代表案例</a>
+<a href="#experience">经历</a>
+<a href="#works">作品</a>
+<a href="#contact">联系</a>
+</nav>
+</div>
+</header>
+<main class="page-shell" id="main">
+<section class="hero" aria-labelledby="page-title">
+<div>
+<p class="eyebrow">FINANCIAL TECHNOLOGY</p>
+<h1 id="page-title">结合<span class="phrase">金融与统计</span>背景，构建<span class="phrase">金融数据分析</span>、<span class="phrase">策略评测</span>与 <span class="phrase">AI 研究工具</span>。</h1>
+<p class="hero-intro">我是王金凯，金融学本科、统计学硕士在读。具备价格序列处理、量化回测、预测市场评测和 AI 自动化工作流实践，关注方法如何被验证，也关注结论的适用边界。</p>
+<div class="hero-actions">
+<a class="button primary" href="#cases">查看代表案例 <span aria-hidden="true">↗</span>
+</a>
+<a class="button" href="mailto:wang2861435138@163.com">邮件联系 <span aria-hidden="true">↗</span>
+</a>
+</div>
+<p class="hero-meta">北京 · 首都经济贸易大学统计学硕士在读 · 预计 2027.06 毕业</p>
+</div>
+<aside class="hero-board" aria-label="分析方法流程示意">
+<div class="board-top">
+<span>RESEARCH FRAMEWORK</span>
+<span>流程示意</span>
+</div>
+<p class="board-title">把研究思路，<br>变成可检验的流程。</p>
+<div class="flow-row">
+<span class="flow-number" aria-hidden="true">01</span>
+<div>
+<strong>金融数据</strong>
+<p>净值序列、市场价格与新闻事件</p>
+</div>
+<span class="flow-arrow" aria-hidden="true">↗</span>
+</div>
+<div class="flow-row">
+<span class="flow-number" aria-hidden="true">02</span>
+<div>
+<strong>建模与评测</strong>
+<p>统计因子、对照实验与策略比较</p>
+</div>
+<span class="flow-arrow" aria-hidden="true">↗</span>
+</div>
+<div class="flow-row">
+<span class="flow-number" aria-hidden="true">03</span>
+<div>
+<strong>风险与复核</strong>
+<p>关注交易摩擦、证据质量与局限</p>
+</div>
+<span class="flow-arrow" aria-hidden="true">↗</span>
+</div>
+<p class="board-caption">FINANCE / STATISTICS / AI WORKFLOW</p>
+</aside>
+</section>
+<div class="proof-strip" aria-label="代表案例概览">
+<div class="proof-item">
+<b>8</b>
+<span>统计因子<br>基金轮动研究</span>
+</div>
+<div class="proof-item">
+<b>Top-10</b>
+<span>等权组合配置<br>基金轮动研究</span>
+</div>
+<div class="proof-item">
+<b>20日</b>
+<span>调仓间隔 · 交易日<br>基金轮动研究</span>
+</div>
+</div>
+<section class="cases" id="cases">
+<div class="section-heading">
+<div>
+<p class="eyebrow">SELECTED RESEARCH</p>
+<h2>研究方法，也检验方法的边界。</h2>
+</div>
+<p>连接金融数据、统计建模与策略评测，<br>说明可复现部分与仍需检验的问题。</p>
+</div>
+<article class="case-card">
+<div class="case-side">
+<span class="case-index" aria-hidden="true">01</span>
+<div>
+<p class="case-type">独立研究项目<br>量化策略开发</p>
+<p class="case-date">2026.01 — 2026.02</p>
+</div>
+<p class="metric">Top-10</p>
+<p class="metric-label">等权组合配置</p>
+</div>
+<div class="case-body">
+<h3>基金轮动：把统计特征转化为策略信号</h3>
+<p class="case-lead">如何将动量、波动与高阶统计矩纳入基金收益预测，并在交易摩擦下评估组合表现？</p>
+<ul class="tag-list">
+<li>Python</li>
+<li>Random Forest</li>
+<li>AdaBoost</li>
+<li>统计因子</li>
+</ul>
+<div class="case-grid">
+<div>
+<h4>我的工作</h4>
+<p>使用 Python 整理基金净值，构建 8 个因子并进行截面标准化；以随机森林作为 AdaBoost 基学习器，生成收益预测和组合配置。</p>
+</div>
+<div>
+<h4>分析产出</h4>
+<p>实现固定时间划分的训练与测试、Top-10 等权配置、20 个交易日调仓及成本扣除。关注样本选择、边界信息与高换手等局限。</p>
+</div>
+</div>
+<div class="case-analysis">
+<h4>分析过程</h4>
+<ol>
+<li><strong>数据与特征工程</strong><p>通过 AkShare 获取基金累计净值，整理并对齐时间序列；计算三个动量因子，以及波动率、窗口回撤、偏度、峰度和夏普因子，完成日频截面标准化。</p></li>
+<li><strong>模型与组合生成</strong><p>以随机森林作为 AdaBoost 的基学习器预测未来收益；采用固定时间划分训练与测试，按预测信号选择 Top-10 基金等权配置，每 20 个交易日调仓。</p></li>
+<li><strong>回测与研究复盘</strong><p>目标仓位延迟一个交易日执行，按换手扣除交易成本，并与等权基准比较收益、夏普和换手表现。结合集中持仓、基金池选择与训练标签边界，审视研究的适用范围。</p></li>
+</ol>
+</div>
+<div class="pipeline" aria-label="方法流程">
+<span>基金净值</span>
+<i aria-hidden="true">→</i>
+<span>8 因子</span>
+<i aria-hidden="true">→</i>
+<span>RFA 模型</span>
+<i aria-hidden="true">→</i>
+<span>组合与评测</span>
+</div>
+<p class="small-note">流程示意 · 展示研究方法，不代表原始数据图表</p>
+<details>
+<summary>补充说明与研究边界</summary>
+<div class="detail-content">
+<p>公开 Notebook 包含三个动量因子、波动率、窗口回撤、偏度、峰度与夏普因子，以 2024-01-01 划分训练 / 测试，并将目标仓位延迟一个交易日执行。</p>
+<p>训练标签使用未来 20 日收益；时间边界的标签隔离、基金池的历史一致性与更完整的交易成本假设仍值得进一步检验。此处展示研究代码与方法，不展示未经复核的绩效数字，也不作为实盘记录。</p>
+</div>
+</details>
+<a class="text-link" href="https://github.com/JKW-NB/Quant-Fund-Rotation-RFA" target="_blank" rel="noopener noreferrer">查看公开研究与代码<span aria-hidden="true"> ↗</span>
+<span class="sr-only">（新窗口打开）</span>
+</a>
+</div>
+</article>
+<article class="case-card">
+<div class="case-side">
+<span class="case-index" aria-hidden="true">02</span>
+<div>
+<p class="case-type">实习工作<br>预测市场评测</p>
+<p class="case-date">2026.03 — 2026.05</p>
+</div>
+<p class="metric">6组</p>
+<p class="metric-label">控制变量实验</p>
+</div>
+<div class="case-body">
+<h3>预测市场：评估策略的边际贡献</h3>
+<p class="case-lead">面对 Polymarket 的价格变化与事件信息，如何比较不同预测策略的效果并定位误差？</p>
+<ul class="tag-list">
+<li>Polymarket</li>
+<li>时间序列</li>
+<li>策略评测</li>
+<li>多 Agent</li>
+</ul>
+<div class="case-grid">
+<div>
+<h4>我的工作</h4>
+<p>使用 Python / pandas 整理小时级价格序列，设计 6 组策略实验与 25 项评测指标；结合成交量、流动性和买卖价差，迭代事件分析与风险审计提示词。</p>
+</div>
+<div>
+<h4>分析产出</h4>
+<p>形成策略对比与误差复盘，迭代点预测及区间预测流程；从覆盖率、区间宽度和首次触及方向观察预测质量，支持多 Agent 分工与结果校验。</p>
+</div>
+</div>
+<div class="case-analysis">
+<h4>分析过程</h4>
+<ol>
+<li><strong>价格序列处理</strong><p>对价格数据进行小时级重采样，计算变化并筛选显著波动点，将预测、真实结果与事件节点对齐；探索成交量、流动性和相对价差等特征，补充仅依赖新闻信息的判断。</p></li>
+<li><strong>策略组件评测</strong><p>设计 Group 0—5 共 6 组递进式实验，采用基础准确度、趋势判断、信号质量和模拟交易表现四类、共 25 项指标；区间预测另观察覆盖率与带宽的权衡，以及首次触及上下边界的方向。</p></li>
+<li><strong>提示词与流程迭代</strong><p>迭代事件分析、盘口特征、风险审计和结果复核等角色分工，加入逻辑审计与反弹 / 突破情景判断，减少“利好新闻必然上涨”的单向推断；通过分市场检查点与异常隔离保留批量评测进度。</p></li>
+</ol>
+</div>
+<div class="case-extension">
+<h4>同一实习中的另一项实践：LLM 博弈推理评测</h4>
+<p>基于 <a href="https://arxiv.org/abs/2410.10479" target="_blank" rel="noopener noreferrer">TMGBench<span class="sr-only">（论文，新窗口打开）</span></a> 构建自动评测模块：解析收益矩阵并计算标准答案，按纳什均衡集合完全一致的口径比较求解器输出，另记录占优策略、帕累托最优与最优响应等诊断结果。</p>
+<p>实现并发跑批、断点续测与增量结果保存；生成“总体概览 → 分组诊断 → 单题复盘”的三层 HTML 报告，结合预期 / 实际答案和分段耗时，区分接口异常、结构提取问题与求解错误。</p>
+</div>
+<div class="pipeline" aria-label="方法流程">
+<span>价格与事件</span>
+<i aria-hidden="true">→</i>
+<span>统一评测</span>
+<i aria-hidden="true">→</i>
+<span>策略比较</span>
+<i aria-hidden="true">→</i>
+<span>误差复盘</span>
+</div>
+<p class="small-note">流程示意 · 展示研究方法，不代表原始数据图表</p>
+<details>
+<summary>补充说明与研究边界</summary>
+<div class="detail-content">
+<p>点预测与区间预测采用不同的评测口径；模拟交易指标用于研究比较，尚不能代表真实交易表现。对照实验用于诊断组件变化，不直接证明对未来市场的泛化效果。</p>
+<p>约 10%为简历所述核心预测指标的相对改善，不转换为准确率的百分点提升。实习工作同时涉及基于 TMGBench 的 LLM 博弈推理评测。</p>
+</div>
+</details>
+</div>
+</article>
+<article class="case-card">
+<div class="case-side">
+<span class="case-index" aria-hidden="true">03</span>
+<div>
+<p class="case-type">实习专题<br>事件数据治理</p>
+<p class="case-date">2026.03 — 2026.05</p>
+</div>
+<p class="metric">UTC</p>
+<p class="metric-label">时间标准化</p>
+</div>
+<div class="case-body">
+<h3>事件证据：从价格异动到可追溯记录</h3>
+<p class="case-lead">如何把价格异动、新闻来源与事件节点整理成可核查、可复用的数据，而不只停留在模型摘要？</p>
+<ul class="tag-list">
+<li>事件驱动</li>
+<li>证据校验</li>
+<li>数据治理</li>
+<li>Bitable</li>
+</ul>
+<div class="case-grid">
+<div>
+<h4>我的工作</h4>
+<p>设计价格异动到新闻证据的匹配流程，按相关性与时间排序候选；设置详情页过滤与三层信源校验，再将合格事件标准化写入飞书。</p>
+</div>
+<div>
+<h4>分析产出</h4>
+<p>交付可迁移工作流说明、字段规范与异常规则；记录来源链接、丢弃原因、写入条数与记录 ID，支持复核、增量更新及后续交接。</p>
+</div>
+</div>
+<div class="case-analysis">
+<h4>分析过程</h4>
+<ol>
+<li><strong>事件与证据匹配</strong><p>从价格曲线提取显著波动点，在指定时间窗口检索新闻，按相关性与时间接近程度排序候选；过滤首页、栏目、标签等非正文链接，保留候选备选队列。</p></li>
+<li><strong>自动化工作流</strong><p>用浏览器正文结构、文本抓取结果与原始 HTTP 响应进行三层串行校验，识别失效页面、软 404 与空壳内容；候选未通过则尝试下一条，全部失败时记录丢弃原因。</p></li>
+<li><strong>数据治理与验收</strong><p>统一事件名称、状态、发生时间、事实描述与主信源链接，以 UTC 排序后追加写入 Bitable；用写入条数、记录 ID 和链接格式核对交付结果，保留历史记录并沉淀可迁移流程说明。</p></li>
+</ol>
+</div>
+<div class="pipeline" aria-label="方法流程">
+<span>价格异动</span>
+<i aria-hidden="true">→</i>
+<span>新闻证据</span>
+<i aria-hidden="true">→</i>
+<span>字段标准化</span>
+<i aria-hidden="true">→</i>
+<span>落表验收</span>
+</div>
+<p class="small-note">流程示意 · 展示研究方法，不代表原始数据图表</p>
+<details>
+<summary>补充说明与研究边界</summary>
+<div class="detail-content">
+<p>使用 OpenClaw、DeerFlow 与 Claude Code 辅助搭建 Skill，将事件识别与证据处理串成自动化工作流，重点关注信源、时间与字段口径。</p>
+<p>这是同一实习中的治理专题。公开作品区另列个人开源工具，不将内部工作流或业务数据标为可公开演示。</p>
+</div>
+</details>
+</div>
+</article>
+</section>
+<section class="experience-section" id="experience">
+<div class="section-heading">
+<div>
+<p class="eyebrow">EXPERIENCE & EDUCATION</p>
+<h2>连接金融、统计与真实问题。</h2>
+</div>
+<p>在实习、研究与组织协作中，<br>积累分析、沟通和执行经验。</p>
+</div>
+<div class="experience-layout">
+<div>
+<p class="timeline-label">实习经历 / EXPERIENCE</p>
+<article class="timeline-item">
+<div class="item-meta">
+<span>2026.03 — 2026.05</span>
+<span>数据分析 · Decitron 项目组</span>
+</div>
+<h3>北京中科闻歌科技股份有限公司</h3>
+<p>构建预测市场评测与事件数据治理流程，比较策略组件，参与多 Agent 预测优化与 LLM 博弈推理评测。</p>
+<ul class="tag-list">
+<li>Python</li>
+<li>实验评测</li>
+<li>AI 工作流</li>
+</ul>
+</article>
+<article class="timeline-item">
+<div class="item-meta">
+<span>2025.08 — 2025.12</span>
+<span>数据运营 · 运营服务部</span>
+</div>
+<h3>联想诺谛（北京）智能科技有限公司</h3>
+<p>参与 10,000+ 条客服多轮对话与问题分类数据标注；独立编写 Python 脚本，完成训练集生成、字段标准化与格式转换。另开发人工对齐辅助脚本，支持任务分配、进度跟踪与结果校验。</p>
+<ul class="tag-list">
+<li>pandas</li>
+<li>数据质量</li>
+<li>文本数据</li>
+</ul>
+</article>
+</div>
+<div>
+<p class="timeline-label">教育背景 / EDUCATION</p>
+<article class="timeline-item">
+<div class="item-meta">
+<span>2024.09 — 2027.06（预计）</span>
+<span>硕士在读</span>
+</div>
+<h3>首都经济贸易大学 · 统计学</h3>
+<p>统计与数据科学学院。学习回归分析、计量经济学、时间序列分析与统计学习；获校级一等奖学金。</p>
+</article>
+<article class="timeline-item">
+<div class="item-meta">
+<span>2020.09 — 2024.06</span>
+<span>本科</span>
+</div>
+<h3>青岛大学 · 金融学</h3>
+<p>学习金融工程、公司理财、金融风险管理与证券投资分析。</p>
+</article>
+<div class="community-note">
+<strong>组织协作与知识分享</strong>人工智能创新社第一负责人，组织 Python 与数据分析活动，累计覆盖 100+ 名学生；担任统计与数据科学学院研究生会执行主席。</div>
+</div>
+</div>
+</section>
+<section class="works-section" id="works">
+<div class="section-heading">
+<div>
+<p class="eyebrow">BUILT WITH AI</p>
+<h2>AI 辅助开发与研究工具</h2>
+</div>
+<p>个人作品涵盖需求拆解、流程设计与 AI 辅助实现。<br>通过公开说明和源码，进一步了解作品。</p>
+</div>
+<div class="works-grid">
+<article class="work-card">
+<div class="work-top">
+<span class="work-category">QUANTITATIVE RESEARCH</span>
+<span class="work-symbol" aria-hidden="true">∑</span>
+</div>
+<h3>公募基金量化轮动研究</h3>
+<p class="repo-name">Quant-Fund-Rotation-RFA</p>
+<p class="work-description">围绕基金净值构建统计因子，使用随机森林与 AdaBoost 组合进行收益预测，研究 Top-10 等权配置与交易摩擦下的策略表现。</p>
+<div class="work-detail">
+<h4>流程与实现</h4><p>串联基金净值获取、八因子构建、截面标准化、RFA 模型训练、组合生成与回测评估，采用 Top-10 等权配置和 20 个交易日调仓。</p>
+<h4>设计要点</h4><p>将因子研究与组合评估连接起来，关注信号执行时点、交易成本、换手与样本边界；公开 Notebook 提供完整研究代码入口。</p>
+</div>
+<ul class="tag-list">
+<li>Python</li>
+<li>pandas</li>
+<li>Scikit-learn</li>
+<li>AkShare</li>
+</ul>
+<a class="text-link" href="https://github.com/JKW-NB/Quant-Fund-Rotation-RFA" target="_blank" rel="noopener noreferrer">查看项目与源码<span aria-hidden="true"> ↗</span>
+<span class="sr-only">（新窗口打开）</span>
+</a>
+</article>
+<article class="work-card">
+<div class="work-top">
+<span class="work-category">INFORMATION AUTOMATION</span>
+<span class="work-symbol" aria-hidden="true">≋</span>
+</div>
+<h3>AI 资讯提纯引擎</h3>
+<p class="repo-name">AI-News-Skill</p>
+<p class="work-description">面向 AI 与量化金融等领域，将 RSS 资讯经过模型筛选和中文解读，再归档至 Notion；保留原文链接，方便回溯信息来源。</p>
+<div class="work-detail">
+<h4>流程与实现</h4><p>监听 Hacker News RSS 获取英文资讯，经火山引擎 Doubao 进行主题过滤与中文解读，再调用 Notion API 结构化归档。工作流面向 GitHub Actions 自动化运行，保留原文追溯链接。</p>
+<h4>设计要点</h4><p>将获取、分析与归档拆成三个环节，围绕 AI、机器学习、经济统计和量化金融设置筛选目标，使信息处理流程可以复用。</p>
+</div>
+<ul class="tag-list">
+<li>Python</li>
+<li>RSS</li>
+<li>LLM</li>
+<li>Notion API</li>
+</ul>
+<a class="text-link" href="https://github.com/JKW-NB/AI-News-Skill" target="_blank" rel="noopener noreferrer">查看项目与源码<span aria-hidden="true"> ↗</span>
+<span class="sr-only">（新窗口打开）</span>
+</a>
+</article>
+<article class="work-card">
+<div class="work-top">
+<span class="work-category">AGENT GOVERNANCE</span>
+<span class="work-symbol" aria-hidden="true">⇄</span>
+</div>
+<h3>多 Agent 接力治理协议</h3>
+<p class="repo-name">agent-relay-governance</p>
+<p class="work-description">将项目状态、交接检查点、人工复核与 SHA256 归档规则封装为 Skill，让不同 Agent 的串行协作更容易交接与追溯。</p>
+<div class="work-detail">
+<h4>流程与实现</h4><p>用双层状态管理与五处同步规则维护当前进度、检查点和项目记录；交接时沿用已有决策，通过人工复核与 SHA256 清单组织数据归档。</p>
+<h4>设计要点</h4><p>聚焦多 Agent 串行接力中的状态丢失、重复决策与来源不清问题，使用明确的交接协议、状态机和文档模板约束协作过程。</p>
+</div>
+<ul class="tag-list">
+<li>Agent Skill</li>
+<li>状态管理</li>
+<li>人工复核</li>
+<li>可追溯</li>
+</ul>
+<a class="text-link" href="https://github.com/JKW-NB/agent-relay-governance" target="_blank" rel="noopener noreferrer">查看项目与源码<span aria-hidden="true"> ↗</span>
+<span class="sr-only">（新窗口打开）</span>
+</a>
+</article>
+<article class="work-card">
+<div class="work-top">
+<span class="work-category">LEARNING EXPERIENCE</span>
+<span class="work-symbol" aria-hidden="true">↗</span>
+</div>
+<h3>渐进式学习教练</h3>
+<p class="repo-name">learning-coach-skill</p>
+<p class="work-description">一次聚焦一个核心概念，结合实际项目讲解，再通过理解检查推进学习；将学习进度与进入开发的条件组织成可复用 Skill。</p>
+<div class="work-detail">
+<h4>流程与实现</h4><p>每次讲解一个核心概念，先用通俗语言说明，再引入正式术语；结合当前项目举例，通过理解检查、回答批改和进度显示组织学习过程。</p>
+<h4>设计要点</h4><p>区分当前必须理解的内容与后续知识，以 Learning Gate 控制推进节奏；学习驱动开发时，进入实现阶段需要明确授权。</p>
+</div>
+<ul class="tag-list">
+<li>Codex Skill</li>
+<li>理解检查</li>
+<li>Learning Gate</li>
+</ul>
+<a class="text-link" href="https://github.com/JKW-NB/learning-coach-skill" target="_blank" rel="noopener noreferrer">查看项目与源码<span aria-hidden="true"> ↗</span>
+<span class="sr-only">（新窗口打开）</span>
+</a>
+</article>
+</div>
+</section>
+<section class="contact-card" id="contact" aria-labelledby="contact-title">
+<div>
+<p class="eyebrow">LET’S CONNECT</p>
+<h2 id="contact-title">期待下一次，<br>把问题变成答案。</h2>
+<p>欢迎交流岗位机会、数据分析与 AI 应用实践。</p>
+</div>
+<div class="contact-actions">
+<a class="email-link" href="mailto:wang2861435138@163.com">wang2861435138@163.com<span aria-hidden="true"> ↗</span>
+</a>
+<a class="text-link" href="https://github.com/JKW-NB" target="_blank" rel="noopener noreferrer">查看我的 GitHub<span aria-hidden="true"> ↗</span>
+<span class="sr-only">（新窗口打开）</span>
+</a>
+<p class="small-note">北京 · 预计 2027 年 6 月硕士毕业</p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="page-shell footer-inner">
+<span>王金凯 · 金融科技</span>
+<a href="#main">返回顶部 <span aria-hidden="true">↗</span>
+</a>
+<span>内容更新 · 2026.10</span>
+</div>
+</footer>
+</body>
+</html>
