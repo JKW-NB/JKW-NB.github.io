@@ -350,6 +350,23 @@
 <p>个人作品涵盖需求拆解、流程设计与 AI 辅助实现。<br>通过公开说明和源码，进一步了解作品。</p>
 </div>
 <div class="works-grid">
+<article class="work-card" data-project="career-copilot">
+<div class="work-top">
+<span class="work-category">AI APPLICATION ENGINEERING</span>
+<span class="work-symbol" aria-hidden="true">↗</span>
+</div>
+<h3>Career Copilot · 可信职业事实与求职工作台</h3>
+<p class="repo-name">career-copilot</p>
+<p class="work-description">从真实经历中整理可核实的事实，为不同岗位选择材料，保存简历内容版本、最终 PDF 与投递记录；结合 AI 建议与人工确认，减少改写时的事实失真和版本混淆。</p>
+<div class="work-detail">
+<h4>流程与实现</h4><p>使用 Tauri、React、TypeScript 与 SQLite 构建本地桌面应用，打通资产录入、事实审查、岗位要求、事实组合、内容快照、排版稿导出、最终 PDF 和投递登记。通过受信任的桌面命令集中校验业务规则。</p>
+<h4>AI 与数据边界</h4><p>用户配置模型接口，密钥保存于 Windows 系统凭据。只在主动发送时提供所选上下文；结构化建议经预览和明确确认后应用，事实改写重新进入待审查状态。追加修订与历史快照保护旧简历，文件摘要和永久使用锁保护投递来源。</p>
+<h4>验证与当前范围</h4><p>通过 34 项前端单元测试、19 项浏览器流程和 27 项 Rust 合同测试，并完成真实桌面重启验证。AI 调用链路使用本机模拟接口验收；真实外部模型效果待配置后验证。材料批量解析、访谈与自动组合优化仍待后续实现。</p>
+</div>
+<ul class="tag-list"><li>Tauri / React</li><li>TypeScript / Rust</li><li>SQLite</li><li>AI 人工确认</li></ul>
+<a class="text-link" href="https://github.com/JKW-NB/career-copilot" target="_blank" rel="noopener noreferrer">查看项目与源码<span aria-hidden="true"> ↗</span><span class="sr-only">（新窗口打开）</span></a>
+</article>
+
 <article class="work-card">
 <div class="work-top">
 <span class="work-category">INFORMATION AUTOMATION</span>
