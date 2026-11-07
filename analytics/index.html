@@ -353,19 +353,19 @@
 </div>
 <div class="works-grid">
 <article class="work-card" data-project="career-copilot">
-<div class="work-top">
-<span class="work-category">AI APPLICATION ENGINEERING</span>
-<span class="work-symbol" aria-hidden="true">↗</span>
-</div>
-<h3>Career Copilot · 可信职业事实与求职工作台</h3>
-<p class="repo-name">career-copilot</p>
-<p class="work-description">从真实经历中整理可核实的事实，为不同岗位选择材料，保存简历内容版本、最终 PDF 与投递记录；结合 AI 建议与人工确认，减少改写时的事实失真和版本混淆。</p>
+<div class="work-top"><span class="work-category">AI APPLICATION ENGINEERING</span><span class="work-symbol" aria-hidden="true">↗</span></div>
+<h3>Career Copilot · 可追溯的求职工作台</h3>
+<p class="repo-name">作品集 V1 · career-copilot</p>
+<p class="work-description">从简历条目反向追溯事实版本和佐证原件，保留证据位置及人工核对状态。</p>
 <div class="work-detail">
-<h4>流程与实现</h4><p>使用 Tauri、React、TypeScript 与 SQLite 构建本地桌面应用，打通资产录入、事实审查、岗位要求、事实组合、内容快照、排版稿导出、最终 PDF 和投递登记。通过受信任的桌面命令集中校验业务规则。</p>
-<h4>AI 与数据边界</h4><p>用户配置模型接口，密钥保存于 Windows 系统凭据。只在主动发送时提供所选上下文；结构化建议经预览和明确确认后应用，事实改写重新进入待审查状态。追加修订与历史快照保护旧简历，文件摘要和永久使用锁保护投递来源。</p>
-<h4>验证与当前范围</h4><p>通过 34 项前端单元测试、19 项浏览器流程和 27 项 Rust 合同测试，并完成真实桌面重启验证。AI 调用链路使用本机模拟接口验收；真实外部模型效果待配置后验证。材料批量解析、访谈与自动组合优化仍待后续实现。</p>
+<h4>我做了什么</h4><p>用关系画布展示一份文件如何支撑多条事实、每条事实被哪些简历条目引用。用户可修正页码、摘录和材料关联；位置变更后回到待核对，历史快照保留确认时的记录。</p>
+<h4>集成与人工确认</h4><p>对接开源 <a href="https://github.com/reactive-resume/reactive-resume">Reactive Resume</a> 完成排版和 PDF 导出，再回到 Career Copilot 归档。AI 建议经预览和明确确认后应用，事实改写进入待审查状态。</p>
 </div>
-<ul class="tag-list"><li>Tauri / React</li><li>TypeScript / Rust</li><li>SQLite</li><li>AI 人工确认</li></ul>
+<figure class="work-preview">
+<a href="../assets/career-copilot-evidence.png"><img src="../assets/career-copilot-evidence.png" alt="证据关系画布：佐证文件连接事实版本，再连接引用它的简历条目" width="1030" height="225" loading="lazy"></a>
+<figcaption class="small-note">实际界面 · 演示数据 · 点击查看大图</figcaption>
+</figure>
+<ul class="tag-list"><li>Tauri / React</li><li>TypeScript / Rust</li><li>SQLite</li><li>证据追溯</li></ul>
 <a class="text-link" href="https://github.com/JKW-NB/career-copilot" target="_blank" rel="noopener noreferrer">查看项目与源码<span aria-hidden="true"> ↗</span><span class="sr-only">（新窗口打开）</span></a>
 </article>
 

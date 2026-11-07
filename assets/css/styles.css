@@ -838,3 +838,6 @@ ul{
 .case-extension h4 { color: var(--accent); font-size: 12px; margin-bottom: 8px; }
 .case-extension p { color: var(--muted); font-size: 13px; line-height: 1.95; }
 .case-extension p + p { margin-top: 8px; }
+
+.work-preview{margin:1rem 0}
+.work-preview img{display:block;max-width:100%;height:auto}
