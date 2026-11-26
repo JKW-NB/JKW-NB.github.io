@@ -350,7 +350,7 @@
 <p class="work-description">本地求职工作台，串联职业材料、岗位 JD、简历 PDF 和投递记录，便于按岗位组织内容、回查实际投递版本。</p>
 <div class="work-detail">
 <h4>我做了什么</h4><p>把原本分散在材料文件、简历编辑器和投递表格里的任务串成一条工作流。职业材料支持上传或从本地目录扫描；按 JD 选取已确认事实，归档最终 PDF 并登记投递。</p>
-<h4>集成与人工确认</h4><p>对接开源 <a href="https://github.com/reactive-resume/reactive-resume">Reactive Resume</a> 完成排版和 PDF 导出，再回到 Career Copilot 归档。AI 建议经预览和明确确认后应用，事实改写进入待审查状态。</p>
+<h4>集成与人工确认</h4><p>我负责事实核对、版本快照和投递归档，通过公开接口对接 <a href="https://github.com/reactive-resume/reactive-resume">Reactive Resume</a>。编辑器、模板和 PDF 渲染由上游提供，确认稿与返回的 PDF 在本地关联到同一次投递。AI 建议经预览和明确确认后应用，事实改写进入待审查状态。</p>
 </div>
 <figure class="work-preview">
 <a href="../assets/career-copilot-evidence.png"><img src="../assets/career-copilot-evidence.png" alt="证据关系画布：佐证文件连接事实版本，再连接引用它的简历条目" width="1030" height="225" loading="lazy"></a>
@@ -370,7 +370,7 @@
 <p class="work-description">围绕基金净值构建统计因子，使用随机森林与 AdaBoost 组合进行收益预测，研究 Top-10 等权配置与交易摩擦下的策略表现。</p>
 <div class="work-detail">
 <h4>流程与实现</h4><p>串联基金净值获取、八因子构建、截面标准化、RFA 模型训练、组合生成与回测评估，采用 Top-10 等权配置和 20 个交易日调仓。</p>
-<h4>设计要点</h4><p>将因子研究与组合评估连接起来，关注信号执行时点、交易成本、换手与样本边界；公开 Notebook 提供完整研究代码入口。</p>
+<h4>设计要点</h4><p>Notebook 保存的历史回测中，策略累计收益 53.41%，同池等权基准 32.75%，两者年化夏普均为 1.07。训练标签可能跨入测试期，基金池筛选也可能带来生存者偏差。</p>
 </div>
 <ul class="tag-list">
 <li>Python</li>
@@ -413,8 +413,8 @@
 <p class="repo-name">agent-relay-governance</p>
 <p class="work-description">将项目状态、交接检查点、人工复核与 SHA256 归档规则封装为 Skill，让不同 Agent 的串行协作更容易交接与追溯。</p>
 <div class="work-detail">
-<h4>流程与实现</h4><p>用双层状态管理与五处同步规则维护当前进度、检查点和项目记录；交接时沿用已有决策，通过人工复核与 SHA256 清单组织数据归档。</p>
-<h4>设计要点</h4><p>聚焦多 Agent 串行接力中的状态丢失、重复决策与来源不清问题，使用明确的交接协议、状态机和文档模板约束协作过程。</p>
+<h4>流程与实现</h4><p>先从任务契约和检查点恢复现场。需要历史依据时，可通过 OpenViking 查找候选，再核对本地文件哈希并逐字定位原文。</p>
+<h4>设计要点</h4><p>公开试点中，首组 9 道证据定位题由本地方案命中 7 道，增加检索后命中 8 道；另取 5 道新题，两组全部命中。因此保留按需检索，当前进度仍以本地记录为准。</p>
 </div>
 <ul class="tag-list">
 <li>Agent Skill</li>
@@ -470,7 +470,7 @@
 <span>王金凯 · 金融科技</span>
 <a href="#main">返回顶部 <span aria-hidden="true">↗</span>
 </a>
-<span>内容更新 · 2026.10</span>
+<span>内容更新 · 2026.11</span>
 </div>
 </footer>
 </body>

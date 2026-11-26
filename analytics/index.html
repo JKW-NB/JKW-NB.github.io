@@ -31,7 +31,7 @@
 <div>
 <p class="eyebrow">BUSINESS & DATA ANALYTICS</p>
 <h1 id="page-title">从<span class="phrase">业务问题</span>出发，形成有据可依的分析结论与<span class="phrase">策略建议</span>。</h1>
-<p class="hero-intro">我是王金凯，金融学本科、统计学硕士在读。围绕消费洞察、指标建设与实验评估开展分析，用 SQL、Python 处理数据，结合 BI 工具呈现结果，将分析结论转化为方案比较、策略建议和可复用的数据资产。</p>
+<p class="hero-intro">我是王金凯，金融学本科、统计学硕士在读。在消费研究中，我用交易记录区分人群，用市场调查比较渠道与包装方案；在预测评测中，我统一样本和指标，让不同方案可以在相同条件下比较。</p>
 <div class="hero-actions">
 <a class="button primary" href="#cases">查看代表案例 <span aria-hidden="true">↗</span>
 </a>
@@ -346,20 +346,20 @@
 <section class="works-section" id="works">
 <div class="section-heading">
 <div>
-<p class="eyebrow">BUILT WITH AI</p>
-<h2>AI 辅助开发与研究工具</h2>
+<p class="eyebrow">SELECTED PROJECTS</p>
+<h2>个人项目｜从业务问题到分析结论</h2>
 </div>
-<p>个人作品涵盖需求拆解、流程设计与 AI 辅助实现。<br>通过公开说明和源码，进一步了解作品。</p>
+<p>这些项目记录了我如何筛选信息、比较方案，以及判断一项新功能是否值得采用。</p>
 </div>
 <div class="works-grid">
 <article class="work-card" data-project="career-copilot">
 <div class="work-top"><span class="work-category">AI APPLICATION ENGINEERING</span><span class="work-symbol" aria-hidden="true">↗</span></div>
-<h3>Career Copilot · 可追溯的求职工作台</h3>
+<h3>Career Copilot｜一次投递使用了哪一版材料？</h3>
 <p class="repo-name">作品集 V1 · career-copilot</p>
 <p class="work-description">从简历条目反向追溯事实版本和佐证原件，保留证据位置及人工核对状态。</p>
 <div class="work-detail">
 <h4>我做了什么</h4><p>用关系画布展示一份文件如何支撑多条事实、每条事实被哪些简历条目引用。用户可修正页码、摘录和材料关联；位置变更后回到待核对，历史快照保留确认时的记录。</p>
-<h4>集成与人工确认</h4><p>对接开源 <a href="https://github.com/reactive-resume/reactive-resume">Reactive Resume</a> 完成排版和 PDF 导出，再回到 Career Copilot 归档。AI 建议经预览和明确确认后应用，事实改写进入待审查状态。</p>
+<h4>集成与人工确认</h4><p>我负责事实核对、版本快照和投递归档，通过公开接口对接 <a href="https://github.com/reactive-resume/reactive-resume">Reactive Resume</a>。编辑器、模板和 PDF 渲染由上游提供，确认稿与返回的 PDF 在本地关联到同一次投递。AI 建议经预览和明确确认后应用，事实改写进入待审查状态。</p>
 </div>
 <figure class="work-preview">
 <a href="../assets/career-copilot-evidence.png"><img src="../assets/career-copilot-evidence.png" alt="证据关系画布：佐证文件连接事实版本，再连接引用它的简历条目" width="1030" height="225" loading="lazy"></a>
@@ -374,11 +374,11 @@
 <span class="work-category">INFORMATION AUTOMATION</span>
 <span class="work-symbol" aria-hidden="true">≋</span>
 </div>
-<h3>AI 资讯提纯引擎</h3>
+<h3>资讯筛选｜每天哪些动态值得细读？</h3>
 <p class="repo-name">AI-News-Skill</p>
 <p class="work-description">面向 AI 与量化金融等领域，将 RSS 资讯经过模型筛选和中文解读，再归档至 Notion；保留原文链接，方便回溯信息来源。</p>
 <div class="work-detail">
-<h4>流程与实现</h4><p>监听 Hacker News RSS 获取英文资讯，经火山引擎 Doubao 进行主题过滤与中文解读，再调用 Notion API 结构化归档。工作流面向 GitHub Actions 自动化运行，保留原文追溯链接。</p>
+<h4>流程与实现</h4><p>每轮读取 10 条英文资讯，先生成中文概览，再按主题挑选值得细读的条目。简报按日期归档，读者可沿链接核对原文。</p>
 <h4>设计要点</h4><p>将获取、分析与归档拆成三个环节，围绕 AI、机器学习、经济统计和量化金融设置筛选目标，使信息处理流程可以复用。</p>
 </div>
 <ul class="tag-list">
@@ -396,12 +396,12 @@
 <span class="work-category">AGENT GOVERNANCE</span>
 <span class="work-symbol" aria-hidden="true">⇄</span>
 </div>
-<h3>多 Agent 接力治理协议</h3>
+<h3>项目交接｜什么时候值得增加历史检索？</h3>
 <p class="repo-name">agent-relay-governance</p>
 <p class="work-description">将项目状态、交接检查点、人工复核与 SHA256 归档规则封装为 Skill，让不同 Agent 的串行协作更容易交接与追溯。</p>
 <div class="work-detail">
-<h4>流程与实现</h4><p>用双层状态管理与五处同步规则维护当前进度、检查点和项目记录；交接时沿用已有决策，通过人工复核与 SHA256 清单组织数据归档。</p>
-<h4>设计要点</h4><p>聚焦多 Agent 串行接力中的状态丢失、重复决策与来源不清问题，使用明确的交接协议、状态机和文档模板约束协作过程。</p>
+<h4>流程与实现</h4><p>先从任务契约和检查点恢复现场。需要历史依据时，可通过 OpenViking 查找候选，再核对本地文件哈希并逐字定位原文。</p>
+<h4>设计要点</h4><p>公开试点中，首组 9 道证据定位题由本地方案命中 7 道，增加检索后命中 8 道；另取 5 道新题，两组全部命中。因此保留按需检索，当前进度仍以本地记录为准。</p>
 </div>
 <ul class="tag-list">
 <li>Agent Skill</li>
@@ -418,7 +418,7 @@
 <span class="work-category">LEARNING EXPERIENCE</span>
 <span class="work-symbol" aria-hidden="true">↗</span>
 </div>
-<h3>渐进式学习教练</h3>
+<h3>学习反馈｜怎样判断初学者可以继续？</h3>
 <p class="repo-name">learning-coach-skill</p>
 <p class="work-description">一次聚焦一个核心概念，结合实际项目讲解，再通过理解检查推进学习；将学习进度与进入开发的条件组织成可复用 Skill。</p>
 <div class="work-detail">
@@ -439,12 +439,12 @@
 <span class="work-category">QUANTITATIVE RESEARCH</span>
 <span class="work-symbol" aria-hidden="true">∑</span>
 </div>
-<h3>量化基金轮动策略模型开发</h3>
+<h3>基金筛选｜轮动组合的额外收益是否伴随更好的风险表现？</h3>
 <p class="repo-name">Quant-Fund-Rotation-RFA</p>
-<p class="work-description">独立使用 Python 搭建基金轮动研究与回测框架，完成数据处理、因子构建、组合生成和绩效评估，沉淀可复用代码与策略说明。</p>
+<p class="work-description">从同一基金池构建轮动组合与等权基准，同时观察累计收益和年化夏普，判断选基方法在历史样本上的表现。</p>
 <div class="work-detail">
 <h4>流程与实现</h4><p>串联基金净值获取、八因子构建、截面标准化、RFA 模型训练、组合生成与回测评估，采用 Top-10 等权配置和 20 个交易日调仓。</p>
-<h4>设计要点</h4><p>将因子研究与组合评估连接起来，关注信号执行时点、交易成本、换手与样本边界；公开 Notebook 提供完整研究代码入口。</p>
+<h4>设计要点</h4><p>Notebook 保存的历史回测中，策略累计收益 53.41%，同池等权基准 32.75%，两者年化夏普均为 1.07。训练标签可能跨入测试期，基金池筛选也可能带来生存者偏差。</p>
 </div>
 <ul class="tag-list">
 <li>Python</li>
@@ -479,7 +479,7 @@
 <span>王金凯 · 商业分析 / 数据分析</span>
 <a href="#main">返回顶部 <span aria-hidden="true">↗</span>
 </a>
-<span>内容更新 · 2026.10</span>
+<span>内容更新 · 2026.11</span>
 </div>
 </footer>
 </body>
