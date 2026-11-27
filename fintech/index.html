@@ -182,39 +182,52 @@
 <div class="case-side">
 <span class="case-index" aria-hidden="true">02</span>
 <div>
-<p class="case-type">实习工作<br>预测市场评测</p>
+<p class="case-type">中科闻歌实习<br>Polymarket 预测系统</p>
 <p class="case-date">2026.03 — 2026.05</p>
 </div>
-<p class="metric">6组</p>
-<p class="metric-label">递进式控制变量实验</p>
+<p class="metric">25 项</p>
+<p class="metric-label">4 维度评测指标 · 6 组实验</p>
 </div>
 <div class="case-body">
-<h3>预测市场：用控制变量实验量化策略边际贡献</h3>
-<p class="case-lead">面对 Polymarket 价格波动与高频事件流，如何结合盘口特征与风险审计构建统一评测体系，避免“利好新闻必然上涨”的单向推断？</p>
+<h3>Polymarket 预测市场：非结构化新闻量化与多视角预测体系</h3>
+<p class="case-lead">面对地缘政治、宏观政策与大宗商品等高频事件市场，如何独立搭建准确度评测体系、把非结构化新闻量化为交易信号，并融合首触动力学与盘口微观结构提升预测准确率？</p>
 <ul class="tag-list">
 <li>Polymarket</li>
-<li>时间序列重采样</li>
-<li>25 项评测指标</li>
-<li>风险审计 Agent</li>
+<li>非结构化新闻量化</li>
+<li>首触预测 (FT-Acc)</li>
+<li>盘口微观结构</li>
+<li>多视角 Agent</li>
 </ul>
 <div class="case-grid">
 <div>
-<h4>我的工作</h4>
-<p>用 Python / pandas 对价格序列做小时级重采样与显著波动点筛选，设计 Group 0–5 共 6 组递进实验与 25 项四类指标，引入成交量、流动性与买卖价差特征。</p>
+<h4>独立设计评测与市场思考</h4>
+<p>自主调研并搭建覆盖<strong>基础精度（Brier Score / MAE / RMSE / beats_naive）、趋势方向（DA / MDA / IC）、信号质量与模拟交易</strong>的 4 维度 25 项评测体系；在单纯时序预测之外，提出引入<strong>首触预测（First-Touch，判断率先触及上界还是下界）</strong>以及<strong>巨鲸冲击、盘口震荡、流动性真空（相对价差）与资金池深度</strong>等微观市场理念，避免“利好新闻必然单边上涨”的机械推断。</p>
 </div>
 <div>
-<h4>研究产出</h4>
-<p>通过事件分析、盘口特征、风险审计与结果复核的多 Agent 角色分工，推动核心预测指标较基线相对改善约 10%，并补齐区间覆盖率与带宽权衡诊断。</p>
+<h4>多视角大模型量化与架构参考</h4>
+<p>架构上参考开源项目 <a href="https://github.com/virattt/ai-hedge-fund" target="_blank" rel="noopener noreferrer">virattt/ai-hedge-fund<span class="sr-only">（新窗口打开）</span></a> 的多角色投资委员会思路，将工作流采集的非结构化新闻数据经 Two-Step CoT 过滤与大模型量化后，交由事件分析、盘口微观特征、风险审计与结果复核等多视角 Agent 联合研判，结合 Group 0–5 六组递进对照实验，推动核心预测指标较基线相对改善约 10%。</p>
 </div>
+</div>
+<div class="data-table-wrap">
+<table class="data-table">
+<thead><tr><th>核心模块</th><th>我的思考与设计</th><th>解决的金融/建模痛点</th></tr></thead>
+<tbody>
+<tr><td><strong>4 维度 25 项评测体系</strong></td><td>自主调研 Brier Score / DA / MDA / IC / 覆盖率与带宽权衡</td><td>打破单一误差盲区，统一不同策略与 Prompt 版本的横向评估口径</td></tr>
+<tr><td><strong>首触与微观盘口理念</strong></td><td>引入首触准确率（FT-Acc，未触碰不稀释分母）、相对价差预警、资金池深度与巨鲸/震荡情景</td><td>刻画真实盘口博弈与非线性波动，补齐纯时序模型对突发冲击与震荡市的不敏感</td></tr>
+<tr><td><strong>多视角新闻量化（参考 ai-hedge-fund）</strong></td><td>非结构化新闻流 → 大模型量化信号 → 多视角 Agent 投票与风险审计</td><td>把零散新闻转化为可回测的量化特征，减少单 Prompt 情绪化与单边误判</td></tr>
+</tbody>
+</table>
 </div>
 <div class="case-extension">
 <h4>同实习扩展实践：TMGBench LLM 博弈推理评测</h4>
 <p>基于 <a href="https://arxiv.org/abs/2410.10479" target="_blank" rel="noopener noreferrer">TMGBench<span class="sr-only">（论文，新窗口打开）</span></a> 搭建自动评测模块：解析收益矩阵计算纳什均衡标准答案，支持并发跑批、断点续测与“总体概览 → 分组诊断 → 单题复盘”三层 HTML 归因报告。</p>
 </div>
-<div class="pipeline" aria-label="策略评测管道">
-<span>小时级价格重采样</span>
+<div class="pipeline" aria-label="Polymarket 预测与评测管道">
+<span>新闻工作流 + 盘口数据</span>
 <i aria-hidden="true">→</i>
-<span>盘口与事件对齐</span>
+<span>大模型非结构化量化</span>
+<i aria-hidden="true">→</i>
+<span>多视角 Agent + 首触/震荡判断</span>
 <i aria-hidden="true">→</i>
 <span>Group 0–5 对照实验</span>
 <i aria-hidden="true">→</i>
@@ -223,7 +236,8 @@
 <details>
 <summary>补充说明与研究边界</summary>
 <div class="detail-content">
-<p>点预测与区间预测采用独立评测口径；模拟交易表现仅用于离线组件诊断，不直接代表实盘收益。约 10% 为核心预测指标的相对改善，不等同于准确率百分点绝对提升。</p>
+<p>多视角协作架构参考了开源项目 <a href="https://github.com/virattt/ai-hedge-fund" target="_blank" rel="noopener noreferrer">ai-hedge-fund</a> 的角色分工设计思路，并结合 Polymarket 预测市场特点进行了本土化与微观盘口特征适配。</p>
+<p>点预测与极值/首触预测采用独立评测口径；模拟交易指标仅用于离线组件诊断，不直接代表实盘收益。约 10% 为核心预测指标的相对改善，不等同于准确率百分点绝对提升。</p>
 </div>
 </details>
 </div>
